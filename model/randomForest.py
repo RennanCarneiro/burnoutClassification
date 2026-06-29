@@ -40,3 +40,18 @@ y_pred = modelo.predict(X_test)
 # %%
 from sklearn.metrics import accuracy_score
 accuracy_score(y_test, y_pred)
+
+# %%
+%pip install shap
+
+# %%
+import shap
+# %%
+explicador = shap.TreeExplainer(modelo)
+
+valores_shap = explicador.shap_values(X_test)
+
+# %%
+shap.summary_plot(valores_shap, X_test, plot_type="bar")
+shap.summary_plot(valores_shap[:,:,3], X_test)
+# %%
