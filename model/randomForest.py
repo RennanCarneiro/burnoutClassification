@@ -32,7 +32,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_s
 # %%
 from sklearn.ensemble import RandomForestClassifier
 
-modelo = RandomForestClassifier(random_state=42)
+modelo = RandomForestClassifier(random_state=42,max_depth=15, n_estimators=300,)
 
 modelo.fit(X_train, y_train)
 # %%
@@ -40,4 +40,3 @@ y_pred = modelo.predict(X_test)
 # %%
 from sklearn.metrics import accuracy_score
 accuracy_score(y_test, y_pred)
-# %%
