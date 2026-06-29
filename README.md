@@ -11,9 +11,9 @@ Dataset: [Are Your Employees Burning Out?](https://www.kaggle.com/datasets/blurr
 Este projeto transforma um problema de regressão (burn rate) em uma tarefa de classificação de risco de burnout, permitindo identificar colaboradores em níveis:
 
 - Baixo risco
-- Moderado
+- Baixo-Médio
+- Médio
 - Alto
-- Crítico
 
 O modelo Random Forest atingiu **73.3% de acurácia** e revelou que:
 
