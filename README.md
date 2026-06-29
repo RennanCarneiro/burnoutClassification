@@ -1,1 +1,1 @@
-# Burnout-classifitcation
+# Burnout-Insight
